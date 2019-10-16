@@ -1,3 +1,4 @@
+# https://nbviewer.jupyter.org/github/GISH123/2nd-Business-Model-and-Big-Data-Competition/blob/master/catboost%20modeling/for%20those%20too%20lazy%20to%20run%20program/catboost_test.ipynb
 # its very disorganized and i just modify the code whereever i want, so you probably shouldnt look at this,  
 # and the last modification i fitted a bad model(by tuning bad parameters) so the result here is pretty garbage  
 but it has some results which you can see  
