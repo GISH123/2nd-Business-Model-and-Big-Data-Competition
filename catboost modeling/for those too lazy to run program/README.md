@@ -1,4 +1,4 @@
-# its very disorganized and i just modify the code whereever i want so you probably doesnt want to look at this,  
+# its very disorganized and i just modify the code whereever i want, so you probably shouldnt look at this,  
 # and the last modification i fitted a bad model(by tuning bad parameters) so the result here is pretty garbage  
 but it has some results which you can see  
 
