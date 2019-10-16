@@ -3,7 +3,7 @@
 tried hyperparameter tuning "manually"
 
 # Train/Test split :
-Using 5 months(201807 ~ 201811) to predict last month(201812)
+Using 5 months(201807 ~ 201811) to predict last month(201812)  
 so train set = 5 months, test set = 1 month
 
 # Achieved F1Score around 0.1257(best atm)
