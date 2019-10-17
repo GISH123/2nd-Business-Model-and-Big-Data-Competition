@@ -1,7 +1,7 @@
-#做特徵
+# 做特徵
 目前做了持有資產每個月與上個月的變化量，as_flows
 
-##使用
+## 使用
 先做Preprocessing生出來的merged.csv  
 用merged.csv才能跑feature engineering  
 
