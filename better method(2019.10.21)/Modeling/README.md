@@ -1,0 +1,2 @@
+執行完Catboost_to_predict_201901.ipynb
+再執行combine資料夾的程式檔
