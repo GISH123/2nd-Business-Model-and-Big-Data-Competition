@@ -5,7 +5,7 @@
 
 # To know what ive done,please refer to the folders,each folder has its readme, read it there. Thank you!
 
-流程圖(2019.10.17)：
+## 流程圖(2019.10.17)：
 1. Data preprocessing
 https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/master/Preprocessing 
  把raw data四個表融合成一個表，沒處理sr_1.csv這個每筆消費的資料
@@ -24,7 +24,9 @@ https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/mast
 再來Feature engineering的部分我也覺得還可以再加強，但實在是目前想不到更有意義的feature
 
 
-流程圖(2019.10.21):  所有程式都在better method(2019.10.21) folder下執行
+## 流程圖(2019.10.21): 
+## 所有程式都在better method(2019.10.21) folder下執行
+
 發現如果要預測201901的購買行為，我必須調整我的y的定義  
 因此我把每個row的y往上移一格。  
 此作法即讓修改後的y1與y2，代表了該row(該消費者當月)有沒有在"下一個月"購買y1或y2，一樣是0=false,1=true  
