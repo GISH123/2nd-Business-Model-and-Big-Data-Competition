@@ -22,3 +22,28 @@ https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/mast
 
 後續想法：首先我應該會試一下LightGBM這演算法再來如果還有時間我將會使用emsemble的Stacking方法，目前想法大概是做兩層，第一層就是catboost + LightBGM ( + 有時間的話我甚至還想專門處理sr_1.csv這的檔案，專門用NLP演算法來處理 ，或是簡單的計算RFM也可以)第二層就一個logistic regression把這兩個或三個演算法集合起來
 再來Feature engineering的部分我也覺得還可以再加強，但實在是目前想不到更有意義的feature
+
+
+流程圖(2019.10.21):  所有程式都在better method(2019.10.21) folder下執行
+發現如果要預測201901的購買行為，我必須調整我的y的定義  
+因此我把每個row的y往上移一格。  
+此作法即讓修改後的y1與y2，代表了該row(該消費者當月)有沒有在"下一個月"購買y1或y2，一樣是0=false,1=true  
+
+所以把之前preprocess跟feature_engineering跑完生成之merged(all features).csv檔案，拿去在重複process一次  
+即執行Reprocess data這個資料夾之preprocess_y_last_month.ipynb  
+之後生成y = last month(without redundant)這個檔案。
+
+(此步驟可跳過)
+==========================================================================================================
+在把y = last month(without redundant)這個檔案拿去Modeling資料夾，執行Catboost_modeling.ipynb程式。
+此程式主要用前四個月201807~201810的資料來訓練，用第五個月201811的資料來評估F1-score，發現其實跟之前算出來的沒差很多，y1都是0.15左右。
+==========================================================================================================
+
+把y = last month(without redundant)這個檔案拿去Modeling資料夾，執行Catboost_to_predict_201901.ipynb程式。
+此程式以前五個月的資料來訓練，在把第六個月(201812)資料當作test來預測y值(即201901會不會購買)
+
+生成兩個檔案submit_pred_proba_y1(threshold = 0.62).csv  和   submit_pred_proba_y2(threshold = 0.9).csv
+
+最後在此資料夾有一個Combine for submission，主要就是把這兩個csv融合成比賽需要的submission格式。
+
+大功告成。
