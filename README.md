@@ -13,7 +13,8 @@ https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/mast
 2. Feature Engineering
 https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/master/Feature%20engineering  
 這邊主要生成各種資產類別as_X的變化量(該月減掉上個月)，後來用另一個方法快很多，已經算出來了
-3. Catboost Modeling
+
+3. Catboost Modeling (can skip this process, its just for my own evaluation of the model)
 
 https://github.com/GISH123/2nd-Business-Model-and-Big-Data-Competition/tree/master/catboost%20modeling/version2(f1%20score%20=%200.1514)  
 
