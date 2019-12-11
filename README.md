@@ -1,3 +1,4 @@
+決賽 :  
 2019/12/11 上傳決賽之Code 在"決賽"這個資料夾
 preprocess_and_eda.ipynb -> sr_X feature engineering.ipynb -> Catboost_Modeling.ipynb(純粹拿來試驗參數與模型建置，不跑這個也沒關係)  
 -> Catboost_final_to_predict_201901.ipynb
