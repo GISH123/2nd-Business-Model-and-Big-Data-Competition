@@ -1,3 +1,5 @@
+Please refer to the pptx and word file first. Those shows the summary of my teams work.
+
 決賽 :  
 2019/12/11 上傳決賽之Code 在"決賽"這個資料夾  
 執行順序：  
